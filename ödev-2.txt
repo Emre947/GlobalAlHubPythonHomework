@@ -10,4 +10,4 @@ for i in range(1):
         print('dışarı çıkabilirsin.')
     doğum_yılı=int(input('doğum yılı: '))
     kullanıcı.append([ad,soyad,yaş,doğum_yılı])
-print('kullanıcı={},{},{},{}'.format(kullanıcı[0][0][0:5],kullanıcı[0][1][0:5],kullanıcı[0][2],kullanıcı[0][3]))
+print('kullanıcı={},{},{},{}'.format(kullanıcı[0][0][0::],kullanıcı[0][1][0::],kullanıcı[0][2],kullanıcı[0][3]))
