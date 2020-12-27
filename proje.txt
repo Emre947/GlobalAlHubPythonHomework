@@ -1,0 +1,168 @@
+print("**************öğrenci giriş paneli**************")
+öğrenci_adı0="A"
+öğrenci_soyadı0="B"
+x=öğrenci_adı0
+y=öğrenci_soyadı0
+deneme=0
+for i in range(3):
+    deneme+=1
+    print(i+1,". deneme")
+    öğrenci_adı=str(input("isminizi giriniz: "))
+    öğrenci_soyadı=str(input("soyadınızı giriniz: "))
+    a=öğrenci_adı
+    b=öğrenci_soyadı
+    if (x!=a and b==y):
+        print("öğrenci adı hatalı!")
+    elif (x==a and b!=y):
+        print("öğrenci soyadı hatalı!")
+    elif (x!=a and b!=y):
+        print("öğrenci adı ve öğrenci soyadı hatalı!")
+    elif (x==a and b==y):
+        print("hoşgeldin",öğrenci_adı,öğrenci_soyadı)
+        break
+else:
+    print("hatalı giriş,lütfen daha sonra tekrar dene")
+if (x==a and b==y):
+    print("**************ders ekle**************")
+    seçme_sayısı=int(input("lütfen kaç ders seçmek istediğini sayıyla tuşla: "))
+    kontrol=False
+    for i in range(1):
+        seçim1=seçme_sayısı
+        if 3<=seçim1<=5:
+            print("yeterli seçim hakkına sahipsin")
+            kontrol=True
+            if seçim1==3:
+                ders1=str(input("seçilen 1. ders: "))
+                d1={"vize":int(input("vize:"))*0.3,"final":int(input("final:"))*0.5,"proje":int(input("proje:"))*0.2}
+                ortalama_d1=round(d1["vize"]+d1["final"]+d1["proje"])
+                print("veriler=",d1,"ortalama=",ortalama_d1)
+        
+                ders2=str(input("seçilen 2.ders: "))
+                d2={"vize":int(input("vize:"))*0.3,"final":int(input("final:"))*0.5,"proje":int(input("proje:"))*0.2}
+                ortalama_d2=round(d2["vize"]+d2["final"]+d2["proje"])
+                print("veriler=",d2,"ortalama=",ortalama_d2)
+                
+                ders3=str(input("seçilen 3. ders: "))
+                d3={"vize":int(input("vize:"))*0.3,"final":int(input("final:"))*0.5,"proje":int(input("proje:"))*0.2}
+                ortalama_d3=round(d3["vize"]+d3["final"]+d3["proje"])
+                print("veriler=",d3,"ortalama=",ortalama_d3)
+                
+            elif seçim1==4:
+                ders1=str(input("seçilen 1. ders: "))
+                d1={"vize":int(input("vize:"))*0.3,"final":int(input("final:"))*0.5,"proje":int(input("proje:"))*0.2}
+                ortalama_d1=round(d1["vize"]+d1["final"]+d1["proje"])
+                print("veriler=",d1,"ortalama=",ortalama_d1)
+                
+                ders2=str(input("seçilen 2.ders: "))
+                d2={"vize":int(input("vize:"))*0.3,"final":int(input("final:"))*0.5,"proje":int(input("proje:"))*0.2}
+                ortalama_d2=round(d2["vize"]+d2["final"]+d2["proje"])
+                print("veriler=",d2,"ortalama=",ortalama_d2)
+               
+                ders3=str(input("seçilen 3. ders: "))
+                d3={"vize":int(input("vize:"))*0.3,"final":int(input("final:"))*0.5,"proje":int(input("proje:"))*0.2}
+                ortalama_d3=round(d3["vize"]+d3["final"]+d3["proje"])
+                print("veriler=",d3,"ortalama=",ortalama_d3)
+                
+                ders4=str(input("seçilen 4. ders: "))
+                d4={"vize":int(input("vize:"))*0.3,"final":int(input("final:"))*0.5,"proje":int(input("proje:"))*0.2}
+                ortalama_d4=round(d4["vize"]+d4["final"]+d4["proje"])
+                print("veriler=",d4,"ortalama=",ortalama_d4)
+               
+            elif seçim1==5:
+                ders1=str(input("seçilen 1. ders: "))
+                d1={"vize":int(input("vize:"))*0.3,"final":int(input("final:"))*0.5,"proje":int(input("proje:"))*0.2}
+                ortalama_d1=round(d1["vize"]+d1["final"]+d1["proje"])
+                print("veriler=",d1,"ortalama=",ortalama_d1)
+               
+                ders2=str(input("seçilen 2.ders: "))
+                d2={"vize":int(input("vize:"))*0.3,"final":int(input("final:"))*0.5,"proje":int(input("proje:"))*0.2}
+                ortalama_d2=round(d2["vize"]+d2["final"]+d2["proje"])
+                print("veriler=",d2,"ortalama=",ortalama_d2)
+
+                ders3=str(input("seçilen 3. ders: "))
+                d3={"vize":int(input("vize:"))*0.3,"final":int(input("final:"))*0.5,"proje":int(input("proje:"))*0.2}
+                ortalama_d3=round(d3["vize"]+d3["final"]+d3["proje"])
+                print("veriler=",d3,"ortalama=",ortalama_d3)
+                
+                ders4=str(input("seçilen 4. ders: "))
+                d4={"vize":int(input("vize:"))*0.3,"final":int(input("final:"))*0.5,"proje":int(input("proje:"))*0.2}
+                ortalama_d4=round(d4["vize"]+d4["final"]+d4["proje"])
+                print("veriler=",d4,"ortalama=",ortalama_d4)
+            
+                ders5=str(input("seçilen 5. ders: "))
+                d5={"vize":int(input("vize:"))*0.3,"final":int(input("final:"))*0.5,"proje":int(input("proje:"))*0.2}
+                ortalama_d5=round(d5["vize"]+d5["final"]+d5["proje"])
+                print("veriler=",d5,"ortalama=",ortalama_d5)
+              
+            print("************************************************")
+            
+            print("girilen derslerden birini seçiniz")
+            S=str(input("seçilen ders="))
+            if S==ders1:
+                if ortalama_d1>90:
+                    print("dersi AA ile verdin")
+                elif 70<ortalama_d1<90:
+                    print("dersi BB ile verdin")
+                elif 50<ortalama_d1<70:
+                    print("dersi CC ile verdin")
+                elif 30<ortalama_d1<50:
+                    print("dersi DD ile verdin")
+                elif ortalama_d1<30:
+                    print("dersi FF ile verdin,başarısız oldun")
+            elif S==ders2:
+                if ortalama_d2>90:
+                    print("dersi AA ile verdin")
+                elif 70<ortalama_d2<90:
+                    print("dersi BB ile verdin")
+                elif 50<ortalama_d2<70:
+                    print("dersi CC ile verdin")
+                elif 30<ortalama_d2<50:
+                    print("dersi DD ile verdin")
+                elif ortalama_d2<30:
+                    print("dersi FF ile verdin,başarısız oldun")
+            elif S==ders3:
+                if ortalama_d3>90:
+                    print("dersi AA ile verdin")
+                elif 70<ortalama_d3<90:
+                    print("dersi BB ile verdin")
+                elif 50<ortalama_d3<70:
+                    print("dersi CC ile verdin")
+                elif 30<ortalama_d3<50:
+                    print("dersi DD ile verdin")
+                elif ortalama_d3<30:
+                    print("dersi FF ile verdin,başarısız oldun")
+            elif S==ders4:
+                if ortalama_d4>90:
+                    print("dersi AA ile verdin")
+                elif 70<ortalama_d4<90:
+                    print("dersi BB ile verdin")
+                elif 50<ortalama_d4<70:
+                    print("dersi CC ile verdin")
+                elif 30<ortalama_d4<50:
+                    print("dersi DD ile verdin")
+                elif ortalama_d4<30:
+                    print("dersi FF ile verdin,başarısız oldun")
+            elif S==ders5:
+                if ortalama_d5>90:
+                    print("dersi AA ile verdin")
+                elif 70<ortalama_d5<90:
+                    print("dersi BB ile verdin")
+                elif 50<ortalama_d5<70:
+                    print("dersi CC ile verdin")
+                elif 30<ortalama_d5<50:
+                    print("dersi DD ile verdin")
+                elif ortalama_d5<30:
+                    print("dersi FF ile verdin,başarısız oldun")
+                
+            
+            
+            
+    if not kontrol:
+        print("ders seçim hakkını hatalı tuşladın")
+        print("en az 3 en fazla 5 ders alabilirsin")
+        cevap=input("sistem tarafından kontrol edilsin mi?(evet/hayır): ")
+        cevap0=cevap
+        if cevap0=="evet":
+            print("başarısız olduğun dersler sonucu yeteri kadar ders alamıyorsun")          
+        else:
+            print("oturum kapatılıyor")
