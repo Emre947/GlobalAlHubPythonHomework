@@ -1,0 +1,28 @@
+#ödev-3
+kelime="PYTHON"
+hata_izin=7
+tahminler=[]
+bitti=False
+while not bitti:
+    for harf in kelime:
+        if harf.lower() in tahminler:
+            print(harf,end="")
+        else:
+            print("=",end="")
+    print("")
+    
+    tahmin=input(f"kalan hata hakkı {hata_izin},sonraki tahmin:")
+    tahminler.append(tahmin.lower())
+    if tahmin.lower() not in harf.lower():
+        hata_izin-=1
+        if hata_izin==0:
+            break
+    bitti=True
+    for harf in kelime:
+        if harf.lower() not in tahminler:
+            bitti=False
+if bitti:
+    print(f"kelimeyi buldun,kelime={kelime}")
+else:
+    print(f"oyun bitti,kelime={kelime} doğru cevaptı")
+        
